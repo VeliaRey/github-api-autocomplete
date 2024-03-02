@@ -1,0 +1,79 @@
+html {
+	box-sizing: border-box;
+	}
+	
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+	
+.search {
+	width: 661px;
+	background: rgba(196, 196, 196, 1);
+	padding: 62px 84px 72px 77px;
+}
+	
+.search__input {
+	width: 500px;
+	height: 61px;
+}
+	
+.select__list {
+	overflow: hidden;
+	margin-bottom: 45px;
+}
+	
+.select__list-item {
+	width: 496px;
+	height: 44px;
+	border: 2px solid rgba(0, 0, 0, 1);
+	background: rgba(227, 227, 227, 1);
+}
+	
+.select__list-item :hover {
+	background: rgba(101, 205, 249, 1);
+}
+	
+.search__select {
+	margin-bottom: 45px;
+}
+	
+.search__results {
+	position: relative;
+	border: 1px solid rgba(0, 0, 0, 1);
+	background: rgba(226, 123, 235, 1);
+}
+	
+.results__delete-btn {
+	width: 42px;
+	height: 38.5px;
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	cursor: pointer;
+	background: transparent;
+}
+	
+.results__delete-btn::before,
+.results__delete-btn::after {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 100%;
+	background-color: #ff0000;
+	left: 50%;
+	top: 0;
+}
+	
+.results__delete-btn:before {
+	transform: rotate(45deg);
+}
+	
+.results__delete-btn::after {
+	transform: rotate(-45deg);
+}
